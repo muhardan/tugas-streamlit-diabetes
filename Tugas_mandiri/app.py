@@ -15,7 +15,7 @@ st.markdown('---')
 @st.cache_resource
 def load_model():
     try:
-        model = pickle.load(open('diabetes_model.sav', 'rb'))
+        model = pickle.load(open('Tugas_mandiri/diabetes_model.sav', 'rb'))
         return model
     except FileNotFoundError:
         st.error("Model 'diabetes_model.sav' tidak ditemukan. Pastikan sudah diunggah ke GitHub.")
